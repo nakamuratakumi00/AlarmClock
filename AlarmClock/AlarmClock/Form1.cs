@@ -10,6 +10,7 @@ using System.Media;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Globalization;
+using System.Drawing.Drawing2D;
 
 namespace AlarmClock
 {
@@ -40,8 +41,18 @@ namespace AlarmClock
         {
             InitializeComponent();
             //backgroundWorker1.RunWorkerAsync();
+            this.Load += Form1_Load;
+
+            radius = (int)(Math.Sqrt(Width * Width + Height * Height) / 2);
+            ox = Width / 2;
+            oy = Height / 2;
+            Region = new Region(new GraphicsPath());
 
         }
+
+        private int radius { get; set; }
+        private int ox { get; set; }
+        private int oy { get; set; }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -49,6 +60,17 @@ namespace AlarmClock
             timer1.Start();          // タイマを起動
             label1.Hide();
             AlarmSet();
+
+            Animator.Animate(300, (frame, resolution) =>
+            {
+                if (!Visible || IsDisposed) return false;
+                var graphicsPath = new GraphicsPath();
+                var r = radius * frame / resolution;
+                graphicsPath.AddEllipse(new Rectangle(ox - r, oy - r, r * 2, r * 2));
+                Region = new Region(graphicsPath);
+                if (frame == resolution) Region = null;
+                return true;
+            });
         }
 
 
@@ -192,7 +214,6 @@ namespace AlarmClock
         {
             while (!backgroundWorker1.CancellationPending)
             {
-                //Invalidate();
             }
         }
 
@@ -213,24 +234,22 @@ namespace AlarmClock
             for (int N = 1; N <= 250; N++)
             {
                 grfx.FillRectangle(
-                    new SolidBrush(Color.FromArgb(125,255,255,255)),
+                    new SolidBrush(Color.FromArgb(175, 255, 255, 255)),
                     rand.Next(X_max),  // 0 以上で X_max より小さい乱数(整数)
                     rand.Next(Y_max),  // 0 以上で Y_max より小さい乱数(整数)
                     2, 2);
             }
         }
 
-
-
         private void timer2_Tick(object sender, EventArgs e)
         {
             Timer timer = new Timer();
-            timer.Interval = 1500;
-            timer.Enabled = true;
-
-            if (timer.Interval==1500)
+            timer.Interval = 2000;
+ 
+            if (timer.Interval == 2000)
             {
                 Invalidate();
+               
             }
         }
     }
