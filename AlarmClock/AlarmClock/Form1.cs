@@ -15,29 +15,39 @@ namespace AlarmClock
 {
     public partial class Form1 : Form
     {
+        //アラームがセットされたか
         bool flag = false;
+
+        //入力された日付が正確かどうかのチェック
         bool datecheck = false;
+
+        //アラームがセットされた時に出すtextboxとlabel
         bool alarmClockCheck = false;
 
+        //現在の時刻
         DateTime dNow = DateTime.Now;
 
+        //入力された日付と時間をDateTime型に変換するための変数
         string time = "";
         string format = "MMddHHmm";
         DateTime dateTime;
 
+        //サウンドを入れておく変数
         SoundPlayer sound = new SoundPlayer();
 
-        // [DllImport("winmm.dll")]
-        // extern static bool PlaySound(string s1, IntPtr i1, int i2);
+
         public Form1()
         {
             InitializeComponent();
+            //backgroundWorker1.RunWorkerAsync();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Interval = 1000;  // タイマの間隔を 1000[ms] に設定
             timer1.Start();          // タイマを起動
+            label1.Hide();
             AlarmSet();
         }
 
@@ -60,7 +70,6 @@ namespace AlarmClock
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             time = textBox1.Text;
-            //label2.Text = time;
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -119,6 +128,10 @@ namespace AlarmClock
             AlarmSet();
 
         }
+        private void button5_Click(object sender, EventArgs e)
+        {
+            TimeHyouji();
+        }
         void DayCheck()
         {
             DateTime dt;
@@ -158,12 +171,66 @@ namespace AlarmClock
             {
                 textBox1.Hide();
                 button1.Hide();
+                button2.Hide();
                 button3.Hide();
                 button4.Hide();
                 button4.Enabled = false;
                 label2.Hide();
                 label3.Hide();
                 label4.Hide();
+            }
+        }
+        void TimeHyouji()
+        {
+            label1.Show();
+            button2.Show();
+            label6.Hide();
+            button5.Hide();
+        }
+
+        private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
+        {
+            while (!backgroundWorker1.CancellationPending)
+            {
+                //Invalidate();
+            }
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            backgroundWorker1.CancelAsync();
+            Application.DoEvents();
+        }
+
+        private void Form1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics grfx = e.Graphics;
+            int X_max = this.ClientSize.Width - 1;
+            int Y_max = this.ClientSize.Height - 1;
+            grfx.FillRectangle(new SolidBrush(Color.Black), 0, 0, X_max + 1, Y_max + 1);
+
+            Random rand = new Random();  // 時間に応じて決まるシード値で初期化
+            for (int N = 1; N <= 250; N++)
+            {
+                grfx.FillRectangle(
+                    new SolidBrush(Color.FromArgb(125,255,255,255)),
+                    rand.Next(X_max),  // 0 以上で X_max より小さい乱数(整数)
+                    rand.Next(Y_max),  // 0 以上で Y_max より小さい乱数(整数)
+                    2, 2);
+            }
+        }
+
+
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            Timer timer = new Timer();
+            timer.Interval = 1500;
+            timer.Enabled = true;
+
+            if (timer.Interval==1500)
+            {
+                Invalidate();
             }
         }
     }
