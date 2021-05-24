@@ -50,11 +50,12 @@ namespace AlarmClock
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBox1.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.textBox1.Location = new System.Drawing.Point(51, 292);
+            this.textBox1.Location = new System.Drawing.Point(45, 219);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(329, 34);
+            this.textBox1.Size = new System.Drawing.Size(288, 34);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "アラームを設定したい時刻";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -67,42 +68,43 @@ namespace AlarmClock
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Black;
-            this.label1.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label1.Location = new System.Drawing.Point(171, 114);
+            this.label1.Location = new System.Drawing.Point(146, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(427, 80);
+            this.label1.Size = new System.Drawing.Size(352, 74);
             this.label1.TabIndex = 1;
             this.label1.Text = "現在の時刻";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label2.Location = new System.Drawing.Point(427, 292);
+            this.label2.Location = new System.Drawing.Point(354, 219);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(548, 28);
+            this.label2.Size = new System.Drawing.Size(506, 26);
             this.label2.TabIndex = 2;
             this.label2.Text = "セット方法：1月1日 10時15分にセットの場合";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label3.Location = new System.Drawing.Point(216, 292);
+            this.label3.Location = new System.Drawing.Point(162, 219);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(230, 28);
+            this.label3.Size = new System.Drawing.Size(219, 26);
             this.label3.TabIndex = 3;
             this.label3.Text = "セットしたアラーム";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(80, 374);
+            this.button1.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(70, 280);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 51);
+            this.button1.Size = new System.Drawing.Size(206, 38);
             this.button1.TabIndex = 4;
             this.button1.Text = "アラームをセット";
             this.button1.UseVisualStyleBackColor = true;
@@ -111,20 +113,21 @@ namespace AlarmClock
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label4.Location = new System.Drawing.Point(575, 330);
+            this.label4.Location = new System.Drawing.Point(503, 248);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(245, 28);
+            this.label4.Size = new System.Drawing.Size(216, 26);
             this.label4.TabIndex = 5;
             this.label4.Text = "01011015 と入力";
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(322, 374);
+            this.button2.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(282, 280);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(347, 51);
+            this.button2.Size = new System.Drawing.Size(304, 38);
             this.button2.TabIndex = 6;
             this.button2.Text = "アラームをセット";
             this.button2.UseVisualStyleBackColor = true;
@@ -134,17 +137,18 @@ namespace AlarmClock
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(259, 318);
+            this.label5.Location = new System.Drawing.Point(227, 238);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 38);
+            this.label5.Size = new System.Drawing.Size(0, 30);
             this.label5.TabIndex = 7;
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(552, 375);
+            this.button3.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(493, 283);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(347, 51);
+            this.button3.Size = new System.Drawing.Size(304, 38);
             this.button3.TabIndex = 8;
             this.button3.Text = "アラームの変更";
             this.button3.UseVisualStyleBackColor = true;
@@ -152,10 +156,11 @@ namespace AlarmClock
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(80, 375);
+            this.button4.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(70, 282);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(327, 52);
+            this.button4.Size = new System.Drawing.Size(286, 39);
             this.button4.TabIndex = 9;
             this.button4.Text = "アラームを止める";
             this.button4.UseVisualStyleBackColor = true;
@@ -165,20 +170,22 @@ namespace AlarmClock
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Black;
-            this.label6.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.label6.Location = new System.Drawing.Point(60, 114);
+            this.label6.Location = new System.Drawing.Point(61, 65);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(861, 80);
+            this.label6.Size = new System.Drawing.Size(736, 74);
             this.label6.TabIndex = 10;
             this.label6.Text = "シンプルな目覚まし時計";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // button5
             // 
-            this.button5.Font = new System.Drawing.Font("HGP創英角ﾎﾟｯﾌﾟ体", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.Location = new System.Drawing.Point(322, 376);
+            this.button5.Font = new System.Drawing.Font("UD デジタル 教科書体 NP-B", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button5.Location = new System.Drawing.Point(282, 283);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(323, 51);
+            this.button5.Size = new System.Drawing.Size(283, 38);
             this.button5.TabIndex = 11;
             this.button5.Text = "Start!";
             this.button5.UseVisualStyleBackColor = true;
@@ -198,10 +205,10 @@ namespace AlarmClock
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(984, 549);
+            this.ClientSize = new System.Drawing.Size(861, 412);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button4);
@@ -214,6 +221,7 @@ namespace AlarmClock
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);

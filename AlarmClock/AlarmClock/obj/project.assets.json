@@ -8,23 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\nakamura-ta\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Nakamura Takumi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nakamura-ta\\ソース\\AlarmClock\\AlarmClock\\AlarmClock\\AlarmClock.csproj",
+      "projectUniqueName": "D:\\SIC\\研修\\AlarmClock\\AlarmClock\\AlarmClock\\AlarmClock.csproj",
       "projectName": "AlarmClock",
-      "projectPath": "C:\\Users\\nakamura-ta\\ソース\\AlarmClock\\AlarmClock\\AlarmClock\\AlarmClock.csproj",
-      "packagesPath": "C:\\Users\\nakamura-ta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nakamura-ta\\ソース\\AlarmClock\\AlarmClock\\AlarmClock\\obj\\",
+      "projectPath": "D:\\SIC\\研修\\AlarmClock\\AlarmClock\\AlarmClock\\AlarmClock.csproj",
+      "packagesPath": "C:\\Users\\Nakamura Takumi\\.nuget\\packages\\",
+      "outputPath": "D:\\SIC\\研修\\AlarmClock\\AlarmClock\\AlarmClock\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\nakamura-ta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nakamura Takumi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

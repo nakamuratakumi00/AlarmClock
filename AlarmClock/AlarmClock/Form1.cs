@@ -35,6 +35,7 @@ namespace AlarmClock
 
         //サウンドを入れておく変数
         SoundPlayer sound = new SoundPlayer();
+        String pass = @"D:\SIC\研修\AlarmClock\AlarmClock\AlarmClock\アラーム.wav";
 
 
         public Form1()
@@ -82,7 +83,7 @@ namespace AlarmClock
             {
                 if (dNow >= dateTime)
                 {
-                    sound.SoundLocation = @"C:\Users\nakamura-ta\ソース\AlarmClock\AlarmClock\AlarmClock\アラーム.wav";
+                    sound.SoundLocation = pass;
                     sound.PlayLooping();
                     button4.Enabled = true;
                     flag = false;
@@ -251,6 +252,11 @@ namespace AlarmClock
                 Invalidate();
                
             }
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
